@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Functional Crackers with Guava Leaf Powder</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    /* GLOBAL */
+    body {
+        margin: 0;
+        font-family: "Segoe UI", sans-serif;
+        background: #f8f9fa;
+        scroll-behavior: smooth;
+    }
+    h2 { color: #0b7a36; font-size: 32px; margin-bottom: 10px; }
+    p, li { font-size: 18px; line-height: 1.7; }
+
+    /* NAVBAR */
+    .navbar {
+        width: 100%;
+        background: #0b7a36;
+        padding: 15px;
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+    }
+    .navbar a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 500;
+        transition: 0.3s;
+    }
+    .navbar a:hover { color: #d7ffd7; }
+
+    /* HERO SECTION */
+    .hero {
+        margin-top: 70px;
+        background: url('https://via.placeholder.com/1600x500?text=Guava+Leaf+Functional+Crackers') center/cover no-repeat;
+        height: 450px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-shadow: 0 0 10px #000;
+        font-size: 42px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    /* SECTION STYLE */
+    section {
+        background: white;
+        padding: 40px 80px;
+        margin: 20px auto;
+        max-width: 1100px;
+        box-shadow: 0 0 15px #00000020;
+        border-radius: 10px;
+        animation: fade 0.6s ease-in-out;
+    }
+
+    @keyframes fade { from {opacity: 0;} to {opacity: 1;} }
+
+    /* IMAGE STYLE */
+    .img-center { text-align: center; margin: 20px 0; }
+    .img-center img { width: 60%; border-radius: 15px; box-shadow: 0 0 15px #00000030; }
+
+    /* CARDS */
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+        margin-top: 20px;
+    }
+    .card {
+        background: #eaffea;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 0 10px #00000020;
+        font-size: 18px;
+    }
+
+    /* TABLES */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        font-size: 18px;
+    }
+    table, th, td { border: 1px solid #0b7a36; }
+    th { background: #0b7a36; color: white; padding: 12px; }
+    td { padding: 10px; }
+
+    /* FOOTER */
+    footer {
+        background: #0b7a36;
+        padding: 20px;
+        text-align: center;
+        color: white;
+        margin-top: 50px;
+        font-size: 18px;
+    }
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <a href="#intro">Introduction</a>
+    <a href="#objectives">Objectives</a>
+    <a href="#methodology">Methodology</a>
+    <a href="#formulation">Formulation</a>
+    <a href="#preparation">Preparation</a>
+    <a href="#analysis">Analysis</a>
+    <a href="#benefits">Benefits</a>
+    <a href="#conclusion">Conclusion</a>
+</div>
+
+<!-- HERO BANNER -->
+<div class="hero">
+    Functional Crackers with Guava Leaf Powder
+</div>
+
+<!-- INTRODUCTION -->
+<section id="intro">
+    <h2>Introduction</h2>
+    <p>
+        Guava leaves are a rich source of bioactive compounds, including polyphenols, flavonoids, tannins, 
+        and antioxidants. These compounds contribute to multiple health benefits such as regulating blood 
+        sugar levels, improving digestion, reducing inflammation, and enhancing immune responses.
+    </p>
+    <p>
+        This project aims to develop <b>functional crackers</b> by incorporating guava leaf powder into 
+        traditional cracker formulations. Functional foods are designed not just for basic nutrition, but 
+        also to provide added health benefits. By integrating guava leaf powder, we can leverage its 
+        medicinal properties in a convenient snack form.
+    </p>
+    <p>
+        Additionally, this innovative approach addresses herbal waste reduction by converting excess guava 
+        leaves into a profitable, value-added product. The concept of <b>smart snacks</b> combines 
+        nutritional enhancement with modern technologies like digital verification, allowing consumers to 
+        trace and verify the authenticity, safety, and health benefits of their food in a digital ecosystem.
+    </p>
+    <div class="img-center">
+        <img src="https://via.placeholder.com/700x400?text=Guava+Leaves+and+Crackers" alt="">
+    </div>
+</section>
+
+<!-- OBJECTIVES -->
+<section id="objectives">
+    <h2>Objectives</h2>
+    <ul>
+        <li>To formulate crackers enriched with varying concentrations of guava leaf powder to evaluate optimal dosage for health benefits.</li>
+        <li>To enhance the nutritional profile, antioxidant capacity, and fiber content of traditional crackers.</li>
+        <li>To assess sensory characteristics including taste, texture, aroma, crispness, and visual appeal for consumer acceptability.</li>
+        <li>To compare the nutritional content and functional properties with conventional crackers.</li>
+        <li>To explore shelf-life stability and packaging solutions for smart snacks with digital verification.</li>
+        <li>To reduce herbal waste by utilizing guava leaves in a profitable, sustainable way.</li>
+        <li>To create a model for functional foods that combines nutrition, health benefits, and technological innovation.</li>
+    </ul>
+</section>
+
+<!-- METHODOLOGY -->
+<section id="methodology">
+    <h2>Methodology</h2>
+    <p>
+        The methodology focuses on integrating scientific procedures and innovative concepts to develop 
+        functional crackers:
+    </p>
+    <div class="card-container">
+        <div class="card">Collection & cleaning of fresh guava leaves, ensuring high quality raw material.</div>
+        <div class="card">Shade drying to preserve bioactive compounds without degradation.</div>
+        <div class="card">Grinding & sieving to create fine guava leaf powder for uniform incorporation.</div>
+        <div class="card">Preparation of dough by mixing flour, guava leaf powder, oil, and water in optimal proportions.</div>
+        <div class="card">Rolling, cutting, and baking crackers under controlled conditions for texture and crispness.</div>
+        <div class="card">Nutritional and sensory evaluation to measure antioxidant content, fiber, taste, and appearance.</div>
+        <div class="card">Incorporation of smart packaging and digital verification for traceability and consumer confidence.</div>
+        <div class="card">Documentation of results to assess herbal waste reduction and product innovation impact.</div>
+    </div>
+    <div class="img-center">
+        <img src="https://via.placeholder.com/650x350?text=Cracker+Production+Process" alt="">
+    </div>
+</section>
+
+<!-- FORMULATION -->
+<section id="formulation">
+    <h2>Ingredients & Formulation Table</h2>
+    <table>
+        <tr>
+            <th>Ingredient</th>
+            <th>Quantity</th>
+            <th>Purpose</th>
+        </tr>
+        <tr>
+            <td>Wheat Flour</td>
+            <td>100g</td>
+            <td>Main base for cracker structure</td>
+        </tr>
+        <tr>
+            <td>Guava Leaf Powder</td>
+            <td>2%–8%</td>
+            <td>Functional ingredient rich in antioxidants</td>
+        </tr>
+        <tr>
+            <td>Salt</td>
+            <td>1 tsp</td>
+            <td>Flavor enhancement</td>
+        </tr>
+        <tr>
+            <td>Oil</td>
+            <td>1–2 tbsp</td>
+            <td>Texture & binding</td>
+        </tr>
+        <tr>
+            <td>Water</td>
+            <td>As needed</td>
+            <td>Dough formation</td>
+        </tr>
+    </table>
+</section>
+
+<!-- PREPARATION -->
+<section id="preparation">
+    <h2>Preparation Steps</h2>
+    <ol>
+        <li>Mix all dry ingredients including flour and guava leaf powder.</li>
+        <li>Add oil and blend until crumbly.</li>
+        <li>Add water gradually and knead into firm dough.</li>
+        <li>Roll dough into thin sheets using a roller.</li>
+        <li>Cut into square/round cracker shapes.</li>
+        <li>Bake at 180°C for 12–15 minutes.</li>
+        <li>Cool and store in airtight container.</li>
+    </ol>
+</section>
+
+<!-- ANALYSIS -->
+<section id="analysis">
+    <h2>Nutritional & Sensory Analysis</h2>
+    <h3>➤ Nutritional Comparison</h3>
+    <table>
+        <tr>
+            <th>Parameter</th>
+            <th>Regular Crackers</th>
+            <th>Guava Leaf Crackers</th>
+        </tr>
+        <tr>
+            <td>Fiber</td>
+            <td>Low</td>
+            <td>High</td>
+        </tr>
+        <tr>
+            <td>Antioxidants</td>
+            <td>Minimal</td>
+            <td>Rich in polyphenols & tannins</td>
+        </tr>
+        <tr>
+            <td>Protein</td>
+            <td>Moderate</td>
+            <td>Moderate</td>
+        </tr>
+    </table>
+
+    <h3>➤ Sensory Evaluation Parameters</h3>
+    <ul>
+        <li>Color</li>
+        <li>Flavor</li>
+        <li>Crispness</li>
+        <li>Texture</li>
+        <li>Overall Acceptability</li>
+    </ul>
+</section>
+
+<!-- BENEFITS -->
+<section id="benefits">
+    <h2>Health Benefits of Guava Leaf Powder</h2>
+    <ul>
+        <li>Rich in antioxidants that fight free radicals and reduce oxidative stress.</li>
+        <li>Helps regulate blood sugar levels, beneficial for diabetic individuals.</li>
+        <li>Improves digestion and gut microbiota health.</li>
+        <li>Anti-inflammatory and antimicrobial properties enhance immunity.</li>
+        <li>Supports detoxification and liver health.</li>
+        <li>High fiber content improves digestive wellness and satiety.</li>
+    </ul>
+</section>
+
+<!-- CONCLUSION -->
+<section id="conclusion">
+    <h2>Conclusion</h2>
+    <p>
+        The developed <b>Functional Crackers with Guava Leaf Powder</b> demonstrate enhanced nutritional value, 
+        higher antioxidant content, and health-promoting properties compared to conventional crackers. 
+        The sensory evaluation confirms their acceptability as a tasty, nutritious snack. 
+        By reducing herbal waste and integrating smart snack technologies with digital verification, 
+        this project offers an innovative solution combining health, sustainability, and modern convenience.
+    </p>
+</section>
+
+<footer>
+    © 2025 | Functional Crackers with Guava Leaf Powder – Academic Project Website
+</footer>
+
+</body>
+</html>
